@@ -29,40 +29,44 @@ const TopComp = () => {
         className="bg-cover bg-center text-white md:text-gray-900 text-center py-12"
         style={{
           backgroundImage: "url('/train.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <h2 className="text-3xl font-bold">Amtrak Train Reservation Online</h2>
 
-        {/* Updated tick marks with a different color */}
+        {/* Updated tick marks with responsive font sizes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <p className="mt-6 text-2xl flex items-center justify-center font-semibold">
-            <span className="text-green-400 text-3xl mr-2">✓</span> Amtrak Tickets | New bookings
+          <p className="mt-6 text-xl sm:text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-2xl sm:text-3xl mr-2">✓</span>
+            Amtrak Tickets | New bookings
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center font-semibold ">
-            <span className="text-green-400 text-3xl mr-2">✓</span> Call Us Now And Avail Discounts  
-
+          <p className="mt-4 text-xl sm:text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-2xl sm:text-3xl mr-2">✓</span>
+            Call Us Now And Avail Discounts
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center font-semibold">
-            <span className="text-green-400 text-3xl mr-2">✓</span>{" "}
+          <p className="mt-4 text-xl sm:text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-2xl sm:text-3xl mr-2">✓</span>
             24x7 Support No Waiting Time.
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center font-semibold">
-            <span className="text-green-400 text-3xl mr-2">✓</span>  Book Train Tickets Over Phone
+          <p className="mt-4 text-xl sm:text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-2xl sm:text-3xl mr-2">✓</span>
+            Book Train Tickets Over Phone
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center font-semibold">
-            <span className="text-green-400 text-3xl mr-2">✓</span> Refunds | Cancellations
+          <p className="mt-4 text-xl sm:text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-2xl sm:text-3xl mr-2">✓</span>
+            Refunds | Cancellations
           </p>
         </div>
-        <p className="mt-6 text-2xl font-bold text-gray-100">
-        No Extra Fees Over the Phone
-
+        <p className="mt-6 text-xl sm:text-2xl font-bold text-gray-100">
+          No Extra Fees Over the Phone
         </p>
 
         {/* Call to Action Button */}
-        <div className="w-full text-center lg:text-start lg py-8">
+        <div className="w-full text-center lg:text-start py-8">
           <a
             href={`tel:${phoneNumber}`}
-            className="inline-block bg-white bg-opacity-50 text-gray-900 text-2xl font-bold py-4 px-8 md:py-10 md:px-16 rounded-full 
+            className="inline-block bg-white bg-opacity-50 text-gray-900 text-xl sm:text-2xl font-bold py-4 px-8 md:py-10 md:px-16 rounded-full 
            w-full md:w-auto md:max-w-md mx-auto animated-border mt-5 transition duration-300 hover:bg-opacity-40"
           >
             CALL US NOW <br className="md:hidden" /> {phoneNumber}
