@@ -26,7 +26,7 @@ const Banner = () => {
         {/* Updated points with check mark and pipe separator */}
         <div className="flex flex-col items-center space-y-2">
           <p className="text-xl text-center text-white mt-2 flex items-center">
-            <FaCheck className="mr-2 text-green-400" /> Call Us Now And Avail
+            <FaCheck className="mr-2 text-green-400" /> Call Us Now And Avail <br />
             Discounts | 24x7 Support | No Waiting Time
           </p>
 
