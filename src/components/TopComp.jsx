@@ -28,7 +28,7 @@ const TopComp = () => {
         <h2 className="text-5xl font-bold">Amtrak Train Reservation Online</h2>
 
         {/* Updated tick marks with a different color */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <p className="mt-6 text-2xl flex items-center justify-center">
             <span className="text-green-400 text-3xl mr-2">✓</span> New bookings
           </p>
