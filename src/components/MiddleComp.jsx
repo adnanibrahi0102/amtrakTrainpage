@@ -24,7 +24,7 @@ const MiddleComp = () => {
 
   return (
     <>
-    <div className="flex flex-col md:flex-row justify-around items-center p-8 bg-white h-[400px]">
+    <div className="flex flex-col  md:flex-row justify-around items-center p-8 bg-white h-[500px]">
       {guaranteeItems.map((item, index) => (
         <div key={index} className="flex flex-col items-center mb-4 md:mb-0 md:mr-4 text-center">
           {item.icon}
