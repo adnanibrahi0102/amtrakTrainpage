@@ -9,9 +9,16 @@ const TopComp = () => {
         <p className="text-2xl font-semibold text-center md:text-left">
           Amtrak Train Reservation
         </p>
+
         <a
           href={`tel:${phoneNumber}`}
-          className="inline-block  px-4 py-4 mt-1 md:mt-0  text-base font-bold text-center"
+          className="sm:hidden inline-block px-4 py-4 mt-2 md:mt-0 text-base font-bold text-center 
+             bg-white bg-opacity-20 text-black  rounded-full shadow-lg 
+             transition-all hover:bg-opacity-30 hover:backdrop-blur-lg"
+          style={{
+            backdropFilter: "blur(10px)",
+            WebkitBackdropFilter: "blur(10px)",
+          }}
         >
           CALL US NOW AND AVAIL DISCOUNTS | 24/7 SUPPORT {phoneNumber}
         </a>
@@ -19,36 +26,36 @@ const TopComp = () => {
 
       {/* Middle Section with Background Image */}
       <div
-        className="bg-cover bg-center text-gray-200 text-center py-12"
+        className="bg-cover bg-center text-white md:text-gray-900 text-center py-12"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1583677907470-fb1915191e0e?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          backgroundImage: "url('/train.webp')",
         }}
       >
-        <h2 className="text-5xl font-bold">Amtrak Train Reservation Online</h2>
+        <h2 className="text-3xl font-bold">Amtrak Train Reservation Online</h2>
 
         {/* Updated tick marks with a different color */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <p className="mt-6 text-2xl flex items-center justify-center">
-            <span className="text-green-400 text-3xl mr-2">✓</span> New bookings
+          <p className="mt-6 text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-3xl mr-2">✓</span> Amtrak Tickets | New bookings
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center">
-            <span className="text-green-400 text-3xl mr-2">✓</span> Changes
+          <p className="mt-4 text-2xl flex items-center justify-center font-semibold ">
+            <span className="text-green-400 text-3xl mr-2">✓</span> Call Us Now And Avail Discounts  
+
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center">
+          <p className="mt-4 text-2xl flex items-center justify-center font-semibold">
             <span className="text-green-400 text-3xl mr-2">✓</span>{" "}
-            Cancellations
+            24x7 Support No Waiting Time.
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center">
-            <span className="text-green-400 text-3xl mr-2">✓</span> Customer
-            Service
+          <p className="mt-4 text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-3xl mr-2">✓</span>  Book Train Tickets Over Phone
           </p>
-          <p className="mt-4 text-2xl flex items-center justify-center">
-            <span className="text-green-400 text-3xl mr-2">✓</span> Refunds
+          <p className="mt-4 text-2xl flex items-center justify-center font-semibold">
+            <span className="text-green-400 text-3xl mr-2">✓</span> Refunds | Cancellations
           </p>
         </div>
-        <p className="mt-6 text-2xl font-bold text-gray-200">
-          20% off New Booking available until September 22
+        <p className="mt-6 text-2xl font-bold text-gray-100">
+        No Extra Fees Over the Phone
+
         </p>
 
         {/* Call to Action Button */}
