@@ -12,7 +12,7 @@ const TopComp = () => {
 
         <a
           href={`tel:${phoneNumber}`}
-          className="sm:hidden inline-block px-4 py-4 mt-2 md:mt-0 text-base font-bold text-center 
+          className=" inline-block px-4 py-4 mt-2 md:mt-0 text-base font-bold text-center 
              bg-white bg-opacity-20 text-black  rounded-full shadow-lg 
              transition-all hover:bg-opacity-30 hover:backdrop-blur-lg"
           style={{
@@ -28,7 +28,7 @@ const TopComp = () => {
       <div
         className="bg-cover bg-center text-white md:text-gray-900 text-center py-12"
         style={{
-          backgroundImage: "url('/train.webp')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1505832018823-50331d70d237?q=80&w=1508&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -36,7 +36,7 @@ const TopComp = () => {
         <h2 className="text-3xl font-bold">Amtrak Train Reservation Online</h2>
 
         {/* Updated tick marks with responsive font sizes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-white">
           <p className="mt-6 text-xl sm:text-2xl flex items-center justify-center font-semibold">
             <span className="text-green-400 text-2xl sm:text-3xl mr-2">✓</span>
             Amtrak Tickets | New bookings
